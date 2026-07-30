@@ -16,9 +16,9 @@ def main():
     Thread2=threading.Thread(target=ReverseCount, name="ReverseCounting Thread")
 
     Thread1.start()
-    Thread2.start()
-
     Thread1.join()
+    
+    Thread2.start()
     Thread2.join()
 
 if __name__=="__main__":
